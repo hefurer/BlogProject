@@ -15,7 +15,7 @@ import blog.Author;
 import blog.BlogSystem;
 import blog.Category;
 import blog.Post;
-
+//Going south
 public class MainWindow {
 
 	protected Shell shell;
