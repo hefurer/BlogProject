@@ -98,8 +98,8 @@ public class DB {
 		return ret;
 	}
 	
-	static public List<Category> getCategories(BlogSystem sys) { 
-		
+
+	static public List<Category> getCategories() {
 		List<Category> ret = new ArrayList<Category>();
 
 		try {
@@ -110,10 +110,10 @@ public class DB {
 				Category category = new Category();
 				category.setId(rs.getInt("id"));
 				category.setName(rs.getString("name"));
+	
 
 				ret.add(category);
 
-				System.out.println(category);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -121,6 +121,7 @@ public class DB {
 
 		return ret;
 	}
+	
 	
 	static public Post createPost(String title, String leadParagraph, String content, int categoryId, int authorId) {
 		try {
