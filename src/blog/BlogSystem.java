@@ -18,4 +18,13 @@ public class BlogSystem {
 	    	return null;
 		} 
 	
+	public Category getCategoryById( int id ) {
+		for( Category category: categoryList ) {
+			if ( category.getId() == id) {
+		        return category;
+		    }
+		}
+	    	return null;
+		} 
+	
 }

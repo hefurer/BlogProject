@@ -98,6 +98,30 @@ public class DB {
 		return ret;
 	}
 	
+	static public List<Category> getCategories(BlogSystem sys) { 
+		
+		List<Category> ret = new ArrayList<Category>();
+
+		try {
+			ResultSet rs = null;
+			rs = dbConnection().executeQuery("SELECT * FROM categories");
+
+			while (rs.next()) {
+				Category category = new Category();
+				category.setId(rs.getInt("id"));
+				category.setName(rs.getString("name"));
+
+				ret.add(category);
+
+				System.out.println(category);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return ret;
+	}
+	
 	static public Post createPost(String title, String leadParagraph, String content, int categoryId, int authorId) {
 		try {
 			PreparedStatement stmt = null;
