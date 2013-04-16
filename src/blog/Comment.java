@@ -3,6 +3,7 @@ package blog;
 import java.util.Date;
 
 public class Comment {
+	public String id;
 	public String content;
 	public String writer;
 	public Date date;

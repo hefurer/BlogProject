@@ -119,7 +119,7 @@ public class MainWindow {
 
 				Post k = new Post();
 				k.content = content.getText();
-				k.caption = caption.getText();
+				k.title = caption.getText();
 				k.leadParagraph = text.getText();
 				k.author = v.authorList.get(combo.getSelectionIndex());
 
@@ -139,7 +139,7 @@ public class MainWindow {
 				int i = list.getSelectionIndex();
 
 				content.setText(v.blogPosts.get(i).content);
-				caption.setText(v.blogPosts.get(i).caption);
+				caption.setText(v.blogPosts.get(i).title);
 				text.setText(v.blogPosts.get(i).leadParagraph);
 
 				authorFirstName.setText(v.blogPosts.get(i).author.firstName);

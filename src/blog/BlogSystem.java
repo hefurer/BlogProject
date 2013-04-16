@@ -13,7 +13,7 @@ public class BlogSystem {
 	
 	public void Print(){
 		for(int i = 0; i < blogPosts.size();i++) {
-		System.out.println(blogPosts.get(i).caption + blogPosts.get(i).content + blogPosts.get(i).author.firstName + " " + blogPosts.get(i).author.lastName);
+		System.out.println(blogPosts.get(i).title + blogPosts.get(i).content + blogPosts.get(i).author.firstName + " " + blogPosts.get(i).author.lastName);
 				}
 	}
 }

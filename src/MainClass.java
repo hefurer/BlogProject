@@ -15,7 +15,7 @@ public class MainClass {
 		// TODO Auto-generated method stub
 		
 		Post p = new Post();
-		p.caption = "A Giant Carsh!!!";
+		p.title = "A Giant Carsh!!!";
 		p.content = "Global investors had to muster the courage to keep calm as news of Cyprus’ proposed partial theft of all bank deposits took Wall Street by surprise, closed the country’s banks and drove the price of gold higher.";
 		p.leadParagraph = "Although Cyprus’ government came to its senses and blocked the proposed seizure, the damage has been done.";
 		p.author = new Author();
@@ -25,7 +25,7 @@ public class MainClass {
 		p.category.name = "Politics";
 		
 		Post r = new Post();
-		r.caption = "Going South";
+		r.title = "Going South";
 		r.content = "En massa text som är blogginläggets innehåll";
 		r.leadParagraph = "Ingressen som lockar läsaren.";
 		r.author = new Author();
@@ -35,7 +35,7 @@ public class MainClass {
 		r.category.name = "Economics";
 		
 		Post w = new Post();
-		w.caption = "Around the World";
+		w.title = "Around the World";
 		w.content = "ajlöksdgjlasdföls jasföasldjkfslöakj.";
 		w.leadParagraph = "klököldfksdlfk";
 		w.author = new Author();

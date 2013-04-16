@@ -2,6 +2,7 @@ package blog;
 
 public class Tag {
 	public String name;
+	public String id;
 	
 	public String getTagName(){
 		return name;	
