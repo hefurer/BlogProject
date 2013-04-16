@@ -85,7 +85,6 @@ public class DB {
 				post.setCaption(rs.getString("title"));
 				post.setLeadParagraph(rs.getString("leadParagraph"));
 				post.setContent(rs.getString("title"));
-				post.setAuthorId(rs.getInt("author_id"));
 
 				ret.add(post);
 
