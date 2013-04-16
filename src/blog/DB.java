@@ -71,7 +71,7 @@ public class DB {
 		return null;
 	}
 
-	static public List<Post> getPosts() {
+	static public List<Post> getPosts(BlogSystem sys) { 
 		
 		List<Post> ret = new ArrayList<Post>();
 
@@ -84,7 +84,8 @@ public class DB {
 				post.setId(rs.getInt("id"));
 				post.setCaption(rs.getString("title"));
 				post.setLeadParagraph(rs.getString("leadParagraph"));
-				post.setContent(rs.getString("title"));
+				post.setContent(rs.getString("content"));
+				post.setAuthor(sys.getAuthorById(rs.getInt("author_id"))); 
 
 				ret.add(post);
 

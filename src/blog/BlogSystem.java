@@ -9,13 +9,13 @@ public class BlogSystem {
 	public List<Author> authorList = new ArrayList<Author>();
 	public List<Category> categoryList = new ArrayList<Category>();
 	
-	
-	
-	public void Print(){
-		for(int i = 0; i < blogPosts.size();i++) {
-		System.out.println(blogPosts.get(i).title + blogPosts.get(i).content + blogPosts.get(i).author.firstName + " " + blogPosts.get(i).author.lastName);
-				}
-	}
-	
+	public Author getAuthorById( int id ) {
+		for( Author author : authorList ) {
+			if ( author.getId() == id) {
+		        return author;
+		    }
+		}
+	    	return null;
+		} 
 	
 }
