@@ -16,4 +16,6 @@ public class BlogSystem {
 		System.out.println(blogPosts.get(i).title + blogPosts.get(i).content + blogPosts.get(i).author.firstName + " " + blogPosts.get(i).author.lastName);
 				}
 	}
+	
+	
 }

@@ -77,9 +77,7 @@ public class DB {
 
 		try {
 			ResultSet rs = null;
-			rs = dbConnection().executeQuery("	SELECT posts.id, posts.title, posts.leadParagraph, posts.content, posts.author_id, authors.id AS author_id, authors.firstName as author_firstName, authors.lastName as author_lastName" +
-					"							FROM posts" +
-					"							INNER JOIN authors ON posts.author_id = authors.id");
+			rs = dbConnection().executeQuery("SELECT * FROM posts");
 
 			while (rs.next()) {
 				Post post = new Post();
@@ -87,6 +85,7 @@ public class DB {
 				post.setCaption(rs.getString("title"));
 				post.setLeadParagraph(rs.getString("leadParagraph"));
 				post.setContent(rs.getString("title"));
+				post.setAuthorId(rs.getInt("author_id"));
 
 				ret.add(post);
 

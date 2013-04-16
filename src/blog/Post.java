@@ -42,6 +42,10 @@ public class Post {
 	public void setContent(String content) {
 		this.content = content;
 	}
+	
+	public void setAuthorId(int author_id) {
+		this.author.id = author_id;
+	}
 
 	public String getLeadParagraph() {
 		return leadParagraph;
@@ -79,6 +83,8 @@ public class Post {
 				+ ", leadParagraph=" + leadParagraph + ", author=" + author
 				+ ", category=" + category + "]";
 	}
+
+	
 	
 	
 }
